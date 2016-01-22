@@ -2,8 +2,8 @@ package collections;
 
 import static java.lang.Math.ceil;
 import static java.util.stream.Collectors.toList;
-import static java.util.stream.IntStream.rangeClosed;
 import static java.util.stream.IntStream.range;
+import static java.util.stream.IntStream.rangeClosed;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,6 +45,18 @@ public class ListSplitter {
 	
 
 }
+
+/* Notes ::
+
+In case, you have google guava library in your classpath,
+
+Then you can use the  " com.google.common.collect.Lists.partition(list, size) " API
+
+You can do as follow : Its a one-liner.. 
+
+	Lists.partition(numbers, 10).forEach(System.out::println);
+
+*/
 
 
 
